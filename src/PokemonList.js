@@ -8,14 +8,15 @@ class PokemonList extends Component {
     return (
       <ul className="list--pokemon">
       {poke.map(function(itemPokemon) {
-        return <li className="eachPokemon">
+        return (
+        <li className="eachPokemon">
         <Pokemon
-          pokeImage = {poke.url}
-          pokeName = {poke.name}
-          pokeTypes = {poke.types}
+          pokeImage = {itemPokemon.url}
+          pokeName = {itemPokemon.name}
+          pokeTypes = {itemPokemon.types}
         />
         </li>
-      })}
+      )})}
       </ul>
     );
   }
