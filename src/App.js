@@ -5,13 +5,12 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const arrayAnimals = this.props.animals;
-    console.log(arrayAnimals);
+    const {animals} = this.props;
+    console.log(animals);
     return (
-      <div className="App">
-      {arrayAnimals.map(function(itemPokemon) {
-        return <PokemonList/>;
-      })}
+      <div className= "MyPage">
+      <h1 className="title--page">My PoKeDeX</h1>
+      <PokemonList poke= {animals}/>
       </div>
     );
   }
