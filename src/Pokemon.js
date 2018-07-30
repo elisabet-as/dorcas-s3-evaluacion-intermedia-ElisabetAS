@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import './Pokemon.css';
 
 class Pokemon extends Component {
   render() {
     const {pokeImage, pokeName, pokeTypes} = this.props;
     return (
-      <div className="pokemon--target">
-        <img src={pokeImage} alt="imagen de un pokemon"/>
+      <Fragment>
+        <img className="pokemon--image" src={pokeImage} alt="imagen de un pokemon"/>
         <h2 className="subtitles">{pokeName}</h2>
         <ul className="skills">
           {pokeTypes.map(function(type) {
@@ -16,7 +17,7 @@ class Pokemon extends Component {
             )
           })}
         </ul>
-      </div>
+      </Fragment>
     );
   }
 }

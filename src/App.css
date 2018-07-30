@@ -1,0 +1,10 @@
+.myPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title--page {
+  font-size: 40px;
+}
