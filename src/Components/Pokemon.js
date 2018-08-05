@@ -6,12 +6,12 @@ class Pokemon extends Component {
     const {pokeImage, pokeName, pokeTypes} = this.props;
     return (
       <Fragment>
-        <img className="pokemon--image" src={pokeImage} alt="imagen de un pokemon"/>
+        <img className="pokemon--image" src={pokeImage} alt="imagen de un pokemon" />
         <h2 className="subtitles">{pokeName}</h2>
         <ul className="skills">
           {pokeTypes.map(function(type) {
             return (
-              <li className="pokeSkills">
+              <li key={type} className="pokeSkills">
                 {type}
               </li>
             )

@@ -9,12 +9,12 @@ class App extends Component {
     console.log(animals);
     return (
       <Fragment>
-      <header className= "myPage">
-      <h1 className="title--page">My Pokedex</h1>
-      </header>
-      <main>
-      <PokemonList poke= {animals}/>
-      </main>
+        <header className="myPage">
+          <h1 className="title--page">My Pokedex</h1>
+        </header>
+        <main>
+          <PokemonList poke={animals} />
+        </main>
       </Fragment>
     );
   }
