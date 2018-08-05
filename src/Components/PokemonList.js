@@ -5,7 +5,6 @@ import './PokemonList.css';
 class PokemonList extends Component {
   render() {
     const {poke} = this.props;
-    console.log(poke);
     return (
       <ul className="list--pokemon">
         {poke.map(function(itemPokemon) {

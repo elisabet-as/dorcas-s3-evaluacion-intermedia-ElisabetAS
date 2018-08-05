@@ -6,7 +6,6 @@ import './App.css';
 class App extends Component {
   render() {
     const {animals} = this.props;
-    console.log(animals);
     return (
       <Fragment>
         <header className="myPage">
