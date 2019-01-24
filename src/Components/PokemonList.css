@@ -1,7 +1,8 @@
 .list--pokemon {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-columns: 1fr;
 }
 
 .eachPokemon {
@@ -15,4 +16,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media all and (min-width:425px) {
+  .list--pokemon {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width:728px) {
+  .list--pokemon {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width:1024px) {
+  .list--pokemon {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width:1440px) {
+  .list--pokemon {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
